@@ -824,6 +824,9 @@ function handle_admin_cmd()
 	$result = [];
 
 	switch(@$PARAMS['do']) {
+	    case 'init':
+	    	init_schemas(@$PARAMS['backup']);
+		break;
 	    case 'reset': 
 	    	$DEVSAV = reset_device_saved($DEVSAV);
 		$result['status'] = 'ok';
@@ -859,5 +862,60 @@ function handle_admin_cmd()
 	}
 
 	return return_bind($result);
+}
+
+function init_schemas($backup=false)
+{
+	$db_root = JSONDB_ROOT;
+
+	$dirs = array(
+		array('bak'=>'init/grep-datas', 	  'src'=> $db_root.'/grep-datas'),
+		array('bak'=>'init/grep-datas/accounts',  'src'=> $db_root.'/grep-datas/accounts'),
+		array('bak'=>'init/grep-datas/carts',     'src'=> $db_root.'/grep-datas/carts'),
+		array('bak'=>'init/grep-datas/favorites', 'src'=> $db_root.'/grep-datas/favorites'),
+		array('bak'=>'init/grep-datas/historys',  'src'=> $db_root.'/grep-datas/historys'),
+		array('bak'=>'init/grep-datas/interests', 'src'=> $db_root.'/grep-datas/interests'),
+		array('bak'=>'init/grep-datas/searchs',   'src'=> $db_root.'/grep-datas/searchs'),
+
+		array('bak'=>'init/grep-settings',          'src'=> $db_root.'/grep-settings'),
+		array('bak'=>'init/grep-settings/accounts', 'src'=> $db_root.'/grep-settings/accounts'),
+		array('bak'=>'init/grep-settings/carts',    'src'=> $db_root.'/grep-settings/carts'),
+		array('bak'=>'init/grep-settings/favorites','src'=> $db_root.'/grep-settings/favorites'),
+		array('bak'=>'init/grep-settings/interests','src'=> $db_root.'/grep-settings/interests'),
+		array('bak'=>'init/grep-settings/searchs',  'src'=> $db_root.'/grep-settings/searchs'),
+
+		array('bak'=>'init/push-settings',             'src'=> $db_root.'/push-settings'),
+		array('bak'=>'init/push-settings/keywords',    'src'=> $db_root.'/push-settings/keywords'),
+		array('bak'=>'init/push-settings/messages',    'src'=> $db_root.'/push-settings/messages'),
+		array('bak'=>'init/push-settings/popup-task',  'src'=> $db_root.'/push-settings/popup-task'),
+		array('bak'=>'init/push-settings/positions',   'src'=> $db_root.'/push-settings/positions'),
+		array('bak'=>'init/push-settings/replace-task','src'=> $db_root.'/push-settings/replace-task'),
+		array('bak'=>'init/push-settings/system',      'src'=> $db_root.'/push-settings/system'),
+		array('bak'=>'init/push-settings/users',       'src'=> $db_root.'/push-settings/users'),
+	);
+
+	foreach($dirs as $dir_pair) {
+		$bak_dir = $dir_pair['bak'];
+		$src_dir = $dir_pair['src'];
+
+		if ($backup) {
+			exec('mkdir -p ' . $bak_dir);
+			exec('cp ' . $src_dir . '/schema.json ' . $bak_dir);
+		} else {
+			//初始化时，会用默认来覆盖
+			exec('mkdir -p ' . $src_dir);
+			exec('cp ' . $bak_dir . '/schema.json ' . $src_dir);
+		}
+	}
+
+	if ($backup) {
+		exec('cp ' . $db_root.'/push-settings/system/* init/push-settings/system');
+		omp_trace('backup directorys successfully.');
+	} else {
+		//初始化时，会用默认来覆盖
+		exec('cp init/push-settings/system/* ' . $db_root.'/push-settings/system');
+		omp_trace('init directorys successfully.');
+	}
+
 }
 

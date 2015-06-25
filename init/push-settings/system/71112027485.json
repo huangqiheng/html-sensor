@@ -1,0 +1,15 @@
+{
+  "general":{
+    "ID":71112027485,
+    "CREATE":"Tue, 21 Oct 2014 17:20:08 GMT",
+    "TIME":"Tue, 21 Oct 2014 17:20:08 GMT"
+  },
+  "data":{
+    "key":"is_ident_enabled",
+    "value":"true",
+    "type":"string",
+    "array":"not",
+    "encrypt":"none",
+    "desc":"\u662f\u5426\u5173\u95ed\u8bc6\u522b\u5173\u952e\u5b57\u7684\u529f\u80fd"
+  }
+}

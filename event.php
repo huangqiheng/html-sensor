@@ -81,12 +81,13 @@ function update_loader_js()
 
 	$system = get_system_confs();
 
-	appand_configs($conf_arr, $system);
+	append_configs($conf_arr, $system);
 }
 
 
-function appand_configs($conf_arr, $system_arr)
+function append_configs($conf_arr, $system_arr)
 {
+	//准备配置数据
 	$setings_str = '';
 	foreach($conf_arr as $key=>$item) {
 		$setings_str .= "var $key = ".indent(json_encode($item)).";\n\n";
@@ -94,13 +95,25 @@ function appand_configs($conf_arr, $system_arr)
 
 	$system_str = 'var system = ' . indent(json_encode($system_arr)) . ";\n\n";
 
-	$src_settings_js = __DIR__.'/modules/loader_template.js';
-	$src_settings_content =  file_get_contents($src_settings_js);
-	$new_content = preg_replace('/\/\*CONFIGS_POSITION\*\//i', $setings_str, $src_settings_content);
-	$new_content = preg_replace('/\/\*SYSTEM_CONFIGS\*\//i', $system_str, $new_content);
+	//查找模板
+	$append_arr = [];
+	foreach (glob(__DIR__.'/modules/*_template.js') as $filename){
+		if (!preg_match('~/modules/(\w+)_template\.js$~',$filename, $matches)){continue;}
+		$base_name = $matches[1];
+		$append_arr[] = [$filename, __DIR__.'/'.$base_name.'.js'];
+	}
 
-	$settings_js = __DIR__.'/loader.js';
-	file_put_contents($settings_js, $new_content);
+	//替换模板中的标签
+	foreach($append_arr as $item) {
+		$src_settings_js = $item[0];
+		$settings_js = $item[1];
+
+		$src_settings_content =  file_get_contents($src_settings_js);
+		$new_content = preg_replace('/\/\*CONFIGS_POSITION\*\//i', $setings_str, $src_settings_content);
+		$new_content = preg_replace('/\/\*SYSTEM_CONFIGS\*\//i', $system_str, $new_content);
+
+		file_put_contents($settings_js, $new_content);
+	} 
 }
 
 

@@ -1,0 +1,50 @@
+{
+  "caption":{
+    "title":"\u300a\u8d26\u6237\u540d\u300b\u6620\u5c04\u8868",
+    "content":"\u7528\u6237\u5728\u5404\u5927\u7cfb\u7edf\u5982\u767e\u5ea6\u3001\u817e\u8baf\u3001\u7f51\u6613\u7b49\u7684\u7528\u6237\u540d\u91c7\u96c6\u3002",
+    "image":"\/admin\/uploads\/logo\/id.png",
+    "key":"ae679d1336a34d2a8f5227ee3f7bf7ab"
+  },
+  "listview":[
+    "ID",
+    "device",
+    "summary"
+  ],
+  "fields":{
+    "general":{
+      "ID":"jqxInput-id",
+      "CREATE":"jqxInput-time",
+      "TIME":"jqxInput-time",
+      "device":"jqxInput-name"
+    },
+    "data":{
+      "summary":"jqxListBox",
+      "details":"jqxInput-text"
+    }
+  },
+  "onebox":{
+    "title":"ID",
+    "desc":"",
+    "image":""
+  },
+  "initials":[
+    
+  ],
+  "options":[
+    
+  ],
+  "buttons":[
+    {
+      "image":"\/admin\/uploads\/logo\/eye.png",
+      "url":"\/event.php?cmd=listview",
+      "title":"\u66f4\u65b0\u89c6\u56fe",
+      "tips":"\u66f4\u65b0\u4ee5\u4e0b\u5217\u8868\u7684\u663e\u793a"
+    }
+  ],
+  "mapper":[
+    
+  ],
+  "timers":[
+    
+  ]
+}

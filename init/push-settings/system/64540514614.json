@@ -1,0 +1,14 @@
+{
+  "general":{
+    "ID":64540514614,
+    "CREATE":"Wed, 06 Aug 2014 15:53:59 GMT",
+    "TIME":"Thu, 07 Aug 2014 11:13:13 GMT"
+  },
+  "data":{
+    "key":"load_main_library",
+    "value":"[999, null, \"http:\/\/ompx.hqh.me\/spec\/main.js\"]",
+    "type":"json",
+    "array":"yes",
+    "desc":"\u9ed8\u8ba4\u52a0\u8f7d\u7684main.js\uff0c\u5f53\u6240\u6709\u90fd\u4e0d\u5339\u914d\u7684\u65f6\u5019\u3002"
+  }
+}

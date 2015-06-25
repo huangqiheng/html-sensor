@@ -1,0 +1,15 @@
+{
+  "general":{
+    "ID":71868785310,
+    "CREATE":"Thu, 30 Oct 2014 11:25:51 GMT",
+    "TIME":"Thu, 30 Oct 2014 11:25:51 GMT"
+  },
+  "data":{
+    "key":"is_popup_enabled",
+    "value":"true",
+    "type":"string",
+    "array":"not",
+    "encrypt":"none",
+    "desc":"\u662f\u5426\u6fc0\u6d3b\u5f39\u51fa\u7a97\u53e3\u529f\u80fd"
+  }
+}

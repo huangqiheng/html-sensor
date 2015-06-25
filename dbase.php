@@ -1,5 +1,7 @@
 <?php
 
+define('JSONDB_ROOT', dirname(__DIR__));
+
 
 function jsondb_views($db_name, $table_name, $force_update=false)
 {
@@ -85,7 +87,7 @@ function jsondb_url($db_name, $table_name, $base_name)
 
 function jsondb_file($db_name, $table_name, $base_name)
 {
-	return dirname(__DIR__)."/{$db_name}/{$table_name}/{$base_name}";
+	return JSONDB_ROOT."/{$db_name}/{$table_name}/{$base_name}";
 }
 
 function jsondb_id($db_name, $table_name)
@@ -377,7 +379,7 @@ function data_object($db_name, $table_name, $base_name, $data=null, $encode=true
 function get_confs($db_name=null, $table_name=null, $key_field=null)
 {
 	//生成json数据文件列表
-	$db_root = dirname(__DIR__);
+	$db_root = JSONDB_ROOT;
 	$glob_str = $db_root;
 	if (!empty($db_name)) {
 		$glob_str .= '/'.$db_name;

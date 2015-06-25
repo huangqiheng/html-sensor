@@ -1,0 +1,14 @@
+{
+  "general":{
+    "ID":66618318878,
+    "CREATE":"Sat, 30 Aug 2014 17:03:28 GMT",
+    "TIME":"Sat, 30 Aug 2014 17:03:28 GMT"
+  },
+  "data":{
+    "key":"root_prefix",
+    "value":"http:\/\/ompx.hqh.me\/",
+    "type":"string",
+    "array":"not",
+    "desc":"\u670d\u52a1\u5668\u524d\u7f00"
+  }
+}

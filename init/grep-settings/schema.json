@@ -1,0 +1,11 @@
+{
+  "caption":{
+    "title":"\u91c7\u96c6\u914d\u7f6e\u6570\u636e\u5e93",
+    "content":"\u5ba2\u6237\u7aef\u6d4f\u89c8\u5668\u901a\u8fc7\u6267\u884cJS\u6765\u91c7\u96c6\u7528\u6237\u6570\u636e\uff0c\u8fd9\u91cc\u80fd\u81ea\u52a8\u751f\u6210\u914d\u7f6e\u6587\u4ef6\uff0c\u4f9b\u5ba2\u6237\u7aef\u4f7f\u7528",
+    "image":"\/admin\/uploads\/logo\/settings.png",
+    "key":"d4822348842e4b06acc67c08f4c46915",
+    "hooks":[
+      "http:\/\/ompx.hqh.me\/event.php?cmd=config"
+    ]
+  }
+}

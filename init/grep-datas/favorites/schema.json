@@ -1,0 +1,25 @@
+{
+  "caption":{
+    "title":"\u300a\u6536\u85cf\u5939\u300b\u6620\u5c04\u8868",
+    "content":"\u7535\u5b50\u5546\u52a1\u7f51\u7ad9\u7528\u6237\u6536\u85cf\u5939\u4fe1\u606f\u91c7\u96c6",
+    "image":"\/admin\/uploads\/logo\/favoris.png",
+    "key":"6da4415d3d4d414e91084ee3b671bf1c"
+  },
+  "listview":[
+    "ID",
+    "Name"
+  ],
+  "fields":{
+    "general":{
+      "ID":"jqxInput-id",
+      "CREATE":"jqxInput-time",
+      "TIME":"jqxInput-time",
+      "Name":"jqxInput-name"
+    }
+  },
+  "onebox":{
+    "title":"ID",
+    "desc":"Name",
+    "image":""
+  }
+}

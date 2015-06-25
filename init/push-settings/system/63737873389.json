@@ -1,0 +1,15 @@
+{
+  "general":{
+    "ID":63737873389,
+    "CREATE":"Mon, 28 Jul 2014 08:54:54 GMT",
+    "TIME":"Thu, 07 Aug 2014 11:13:42 GMT"
+  },
+  "data":{
+    "key":"load_main_library",
+    "value":"[0, \".html$\", \"http:\/\/ompx.hqh.me\/spec\/main.js?target=html\"]",
+    "group":"",
+    "desc":"\u6839\u636e\u6b63\u5219\u8868\u8fbe\u5f0f\uff0c\u52a0\u8f7d\u81ea\u5b9a\u4e49\u7684js\u6a21\u5757\uff0c\u6ce8\u610f\uff1a\u8981\u7528\u53cc\u5f15\u53f7\u62ec\u4f4f\u5b57\u7b26\u4e32",
+    "type":"json",
+    "array":"yes"
+  }
+}

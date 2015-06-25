@@ -1,0 +1,14 @@
+{
+  "type":[
+    "json",
+    "string",
+    "code"
+  ],
+  "array":[
+    "yes",
+    "not"
+  ],
+  "encrypt":[
+    "none"
+  ]
+}

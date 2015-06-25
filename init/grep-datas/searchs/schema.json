@@ -1,0 +1,25 @@
+{
+  "caption":{
+    "title":"\u300a\u641c\u7d22\u8bcd\u300b\u6620\u5c04\u8868",
+    "content":"\u7528\u6237\u5728\u77e5\u540d\u7cfb\u7edf\u4e2d\uff0c\u8f93\u5165\u7684\u5173\u952e\u5b57\u3002\u8fd9\u4ee3\u8868\u7528\u6237\u4e3b\u52a8\u83b7\u53d6\u7684\u8d44\u8baf\u3002",
+    "image":"\/admin\/uploads\/logo\/search.png",
+    "key":"b9fb6ed8ee9f4d4b8be2e1664409253b"
+  },
+  "listview":[
+    "ID",
+    "Name"
+  ],
+  "fields":{
+    "general":{
+      "ID":"jqxInput-id",
+      "CREATE":"jqxInput-time",
+      "TIME":"jqxInput-time",
+      "Name":"jqxInput-name"
+    }
+  },
+  "onebox":{
+    "title":"ID",
+    "desc":"Name",
+    "image":""
+  }
+}

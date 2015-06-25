@@ -1,0 +1,14 @@
+{
+  "general":{
+    "ID":63738321238,
+    "CREATE":"Mon, 28 Jul 2014 09:03:55 GMT",
+    "TIME":"Wed, 06 Aug 2014 07:31:11 GMT"
+  },
+  "data":{
+    "key":"bypass_url_regex",
+    "value":"-homemini$",
+    "type":"string",
+    "desc":"\u9700\u8981\u5ffd\u7565\u4e0d\u9700\u8981\u6267\u884c\u7684url\u7f51\u5740\u7684\u6b63\u5219\u8868\u8fbe\u5f0f",
+    "array":"yes"
+  }
+}

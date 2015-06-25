@@ -1,0 +1,15 @@
+{
+  "general":{
+    "ID":71109647263,
+    "CREATE":"Tue, 21 Oct 2014 16:39:45 GMT",
+    "TIME":"Tue, 21 Oct 2014 16:42:55 GMT"
+  },
+  "data":{
+    "key":"is_hbeat_enabled",
+    "value":"true",
+    "type":"string",
+    "array":"not",
+    "encrypt":"none",
+    "desc":"\u662f\u5426\u6fc0\u6d3b\u5fc3\u8df3\u91c7\u96c6\u529f\u80fd\uff0c\u6ce8\u610f\u8fd9\u4e0d\u8981\u5173\u95ed\uff0c\u9664\u975e\u51fa\u73b0\u6545\u969c\u3002"
+  }
+}

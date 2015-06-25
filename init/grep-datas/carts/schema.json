@@ -1,0 +1,25 @@
+{
+  "caption":{
+    "title":"\u300a\u8d2d\u7269\u8f66\u300b\u6620\u5c04\u8868",
+    "content":"\u5b58\u653e\u7528\u6237\u7684\u8d2d\u7269\u8f66\uff0c\u5305\u62ec\u6dd8\u5b9d\u3001\u4eac\u4e1c\u30011\u53f7\u5e97\u7b49\u7535\u5b50\u5546\u52a1\u7f51\u7ad9\u7684\u8d2d\u7269\u8f66\u3002",
+    "image":"\/admin\/uploads\/logo\/cart.png",
+    "key":"a9875cfee64a408489aa2b1d1089736f"
+  },
+  "listview":[
+    "ID",
+    "Name"
+  ],
+  "fields":{
+    "general":{
+      "ID":"jqxInput-id",
+      "CREATE":"jqxInput-time",
+      "TIME":"jqxInput-time",
+      "Name":"jqxInput-name"
+    }
+  },
+  "onebox":{
+    "title":"ID",
+    "desc":"Name",
+    "image":""
+  }
+}
